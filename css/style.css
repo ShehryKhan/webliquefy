@@ -798,7 +798,7 @@ button[type=submit]:hover {
   padding: 2px 0;
   list-style: none;
 }
-.site-navigation .inner ul li ul li a {
+c {
   display: block;
   white-space: nowrap;
   font-size: 17px;
@@ -825,7 +825,6 @@ button[type=submit]:hover {
 .site-navigation .inner ul li a:hover {
   color: #7ee6f8;
   text-decoration: none;
-  transform: scale(.75);
 }
 .site-navigation.active {
   bottom: 0;
@@ -1742,7 +1741,7 @@ button[type=submit]:hover {
 
 /* BG PATTERN */
 .bg-pattern {
-  background: url(../images/bg-wave.jpg) fixed;
+  background: url(../images/bg-wave.jpg) fixed center;
 }
 .bg-pattern:before {
   content: "";
@@ -1751,7 +1750,7 @@ button[type=submit]:hover {
   position: absolute;
   left: 0;
   top: 0;
-  background: url(../images/bg-wave.svg) top right no-repeat;
+  /* background: url(../images/bg-wave.svg) top no-repeat; */
   background-size: 90% auto;
   z-index: 0;
   opacity: 0.1;
@@ -3258,7 +3257,15 @@ footer .footer-col {
 }
 
 /* RESPONSIVE MEDIUM  FIXES */
+@media (max-width: 1390px) {
+  .site-navigation .inner ul li a{
+    font-size: 24px;
+  }
+}
 @media only screen and (max-width: 1199px), only screen and (max-device-width: 1199px) {
+  .site-navigation .inner ul li a{
+    font-size: 18px;
+  }
   .partners .inner ul li {
     padding: 30px 10px;
   }
