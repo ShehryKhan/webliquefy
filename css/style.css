@@ -100,19 +100,15 @@ theme.
 body {
   margin: 0;
   padding: 0;
-  font-family: "Futura";
+  /* font-family: "Futura"; */
   font-size: 16px;
   color: #131314;
+  background-color: #f3f3f3;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   overflow-y: hidden;
   overflow-x: hidden;
-}
-
-::selection {
-  color: #fff;
-  background-color: #000;
 }
 
 .my-nav{
@@ -201,11 +197,13 @@ button[type=submit] {
   font-size: 14px;
   font-weight: 700;
   transition: .2s ease-in;
+  font-family: sans-serif;
 }
 button[type=submit]:hover {
   transition-delay: .05s;
   color: #fff;
   background-color: #000;
+  font-family: sans-serif;
 }
 
 /* CUSTOM CONTAINER */
@@ -776,39 +774,8 @@ button[type=submit]:hover {
   list-style: none;
   position: relative;
 }
-.site-navigation .inner ul li:hover ul {
-  opacity: 1;
-  visibility: visible;
-}
-.site-navigation .inner ul li ul {
-  width: 100%;
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 100%;
-  margin: 0;
-  padding: 0;
-  text-align: left;
-  opacity: 0;
-  visibility: hidden;
-}
-.site-navigation .inner ul li ul li {
-  display: block;
-  margin: 2px 0;
-  padding: 2px 0;
-  list-style: none;
-}
-c {
-  display: block;
-  white-space: nowrap;
-  font-size: 17px;
-}
-.site-navigation .inner ul li ul li a.active {
-  color: #7ee6f8;
-}
-.site-navigation .inner ul li ul li a:hover {
-  color: #7ee6f8;
-}
+
+
 .site-navigation .inner ul li i {
   font-size: 14px;
   color: #fff;
@@ -825,6 +792,7 @@ c {
 .site-navigation .inner ul li a:hover {
   color: #7ee6f8;
   text-decoration: none;
+  transform: scale(.75);
 }
 .site-navigation.active {
   bottom: 0;
@@ -832,14 +800,11 @@ c {
 }
 .site-navigation.active .inner {
   opacity: 1;
-  transform: translateY(-80px);
+  transform: translateY(-100px);
 }
 .site-navigation.active .bottom {
   opacity: 1;
-  transform: translateY(-30px);
-}
-.bottom .nav-img {
-  animation: zoom 5s alternate infinite;
+  transform: translateY(-80px);
 }
 
 .site-navigation.active .layers span {
@@ -1045,7 +1010,7 @@ c {
 .hamburger span:nth-child(1) {
   top: 0px;
   width: 50%;
-  transition: .6s linear;
+  transition: .25s linear;
 }
 .hamburger span:nth-child(2) {
   top: 8px;
@@ -1741,7 +1706,7 @@ c {
 
 /* BG PATTERN */
 .bg-pattern {
-  background: url(../images/bg-wave.jpg) fixed center;
+  background: url(../images/bg-wave.jpg) fixed;
 }
 .bg-pattern:before {
   content: "";
@@ -1750,7 +1715,7 @@ c {
   position: absolute;
   left: 0;
   top: 0;
-  /* background: url(../images/bg-wave.svg) top no-repeat; */
+  background: url(../images/bg-wave.svg) top right no-repeat;
   background-size: 90% auto;
   z-index: 0;
   opacity: 0.1;
@@ -3177,12 +3142,6 @@ c {
   display: block;
   margin-bottom: 25px;
 }
-footer .footer-col {
-  border-right: 1px solid #3a3a3a;
-}
-.footer .footer-col3 {
-  border-right: none;
-}
 .footer figure img {
   height: 50px;
 }
@@ -3257,13 +3216,13 @@ footer .footer-col {
 }
 
 /* RESPONSIVE MEDIUM  FIXES */
-@media (max-width: 1390px) {
-  .site-navigation .inner ul li a{
+@media (max-width: 1400px) {
+  .site-navigation .inner ul li a {
     font-size: 24px;
   }
 }
 @media only screen and (max-width: 1199px), only screen and (max-device-width: 1199px) {
-  .site-navigation .inner ul li a{
+  .site-navigation .inner ul li a {
     font-size: 18px;
   }
   .partners .inner ul li {
@@ -3322,6 +3281,15 @@ footer .footer-col {
 /* RESPONSIVE TABLET FIXES */
 @media only screen and (max-width: 991px), only screen and (max-device-width: 991px) {
   .site-menu ul {
+    display: none;
+  }
+  .builders {
+    text-align: center;
+  }
+  .footer {
+    text-align: center;
+  }
+  .social-media {
     display: none;
   }
   .header:after {
@@ -3434,9 +3402,12 @@ footer .footer-col {
   .job-positions li span:nth-child(2) {
     display: none;
   }
-
+  
   .job-positions li span:nth-child(3) {
     flex: auto;
+  }
+  .text-content-block p {
+    padding-right: 0;
   }
 
   .resume-form {
@@ -3455,6 +3426,9 @@ footer .footer-col {
 
   .solutions h2 {
     font-size: 30px;
+  }
+  .vision {
+    text-align: center;
   }
 
   .left-sidebar {
@@ -3560,9 +3534,6 @@ footer .footer-col {
     display: none;
   }
 
-  .text-content-block p {
-    padding-right: 0;
-  }
 
   .image-box {
     position: static !important;
@@ -3659,9 +3630,7 @@ footer .footer-col {
   .blog .post .post-content h4 {
     font-size: 6vw;
   }
-  .footer {
-    text-align: center;
-  }
+  
 }
 @-webkit-keyframes elasticus {
   0% {
