@@ -3176,9 +3176,14 @@ button[type=submit]:hover {
 .footer ol li a {
   color: #fff;
   font-size: 13px;
+  padding: .5rem;
+  transition: .3s ease-in;
+  transition-delay: .2s;
 }
 .footer ol li a:hover {
-  color: #7ee6f8;
+  background-color: #7ee6f8;
+  border-radius: 50px;
+  color: #000;
 }
 .footer ul {
   width: 100%;

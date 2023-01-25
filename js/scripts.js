@@ -105,7 +105,6 @@ window.addEventListener('scroll', function() {
 
 					if( $('body ' + hash ).length != 0 ){
 					$('.page-transition').removeClass("active");
-
 					}
 					}
 					else {
