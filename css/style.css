@@ -635,7 +635,7 @@ button[type=submit]:hover {
   height: 0;
   position: absolute;
   bottom: 0;
-  background: #7ee6f8;
+  background: #d6d6d6;
 }
 .preloader .layers span:nth-child(1) {
   left: 0;
@@ -696,7 +696,7 @@ button[type=submit]:hover {
   position: fixed;
   left: 0;
   bottom: -100%;
-  background: #7ee6f8;
+  background: #dfdfdf;
   z-index: 4;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -3140,7 +3140,6 @@ button[type=submit]:hover {
 .footer figure {
   width: 100%;
   display: block;
-  margin-bottom: 25px;
 }
 .footer figure img {
   height: 50px;
