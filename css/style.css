@@ -458,7 +458,7 @@ button[type=submit]:hover {
   display: inline-block;
 }
 .pagination .page-item.active .page-link {
-  background: #490eea;
+  background: #818181;
   color: #fff;
 }
 .pagination .page-item .page-link {
@@ -475,7 +475,7 @@ button[type=submit]:hover {
   margin: 0 5px;
 }
 .pagination .page-item .page-link:hover {
-  background: #490eea;
+  background: #5c5c5c;
   color: #fff;
 }
 
@@ -733,6 +733,7 @@ button[type=submit]:hover {
   background: #252525;
 }
 .site-navigation .layers span:nth-child(1) {
+  
   left: 0;
   transition-delay: 0.25s;
 }
@@ -2790,7 +2791,7 @@ button[type=submit]:hover {
   color: #131314;
 }
 .blog .post .post-content h4 a:hover {
-  color: #490eea;
+  color: #76a9ea;
   text-decoration: none;
 }
 .blog .sidebar {
@@ -2826,7 +2827,7 @@ button[type=submit]:hover {
   margin: 0;
 }
 .blog .sidebar .widget .categories li a:hover {
-  color: #490eea;
+  color: #4d4d4d;
   text-decoration: none;
 }
 .blog .sidebar .widget .categories li span {
@@ -2847,16 +2848,16 @@ button[type=submit]:hover {
   list-style: none;
 }
 .blog .sidebar .widget .tags li a {
-  color: #fff;
-  background: #490eea;
+  color: #494949;
   display: inline-block;
   font-size: 13px;
   padding: 3px 6px;
 }
 .blog .sidebar .widget .tags li a:hover {
-  color: #490eea;
+  color: #545454;
   background: #7ee6f8;
   text-decoration: none;
+  border-radius: 3px;
 }
 .blog .sidebar .widget .side-gallery {
   display: block;
@@ -2890,14 +2891,14 @@ button[type=submit]:hover {
   text-transform: uppercase;
   padding: 30px 0;
   margin-bottom: 30px;
-  color: #490eea;
+  color: #414141;
   position: relative;
 }
 .blog .sidebar .widget .title:before {
   content: "";
   width: 60px;
   height: 2px;
-  background: #7ee6f8;
+  background: #979797;
   position: absolute;
   left: -40px;
   bottom: -2px;
@@ -2960,6 +2961,11 @@ button[type=submit]:hover {
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
+
+.contact-icons {
+  color: #000;
+}
+
 .contact-form #contact .form-group span.label-up {
   font-size: 13px;
   line-height: 16px;
