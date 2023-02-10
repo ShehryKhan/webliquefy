@@ -988,6 +988,9 @@ button[type=submit]:hover {
 .hamburger-menu:hover .hamburger span {
   width: 100%;
 }
+.hamburger-menu:hover .hamburger span:nth-child(2) {
+  width: 60%;
+}
 .hamburger * {
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
@@ -1011,11 +1014,11 @@ button[type=submit]:hover {
 .hamburger span:nth-child(1) {
   top: 0px;
   width: 50%;
-  transition: .25s linear;
+  transition: .2s linear;
 }
 .hamburger span:nth-child(2) {
   top: 8px;
-  transition: .6s linear;
+  transition: .4s linear;
   width: 100%;
 }
 .hamburger span:nth-child(3) {
@@ -1947,8 +1950,8 @@ button[type=submit]:hover {
 .price-box b {
   width: 100%;
   display: block;
-  font-size: 40px;
-  letter-spacing: -2px;
+  font-size: 32px;
+  letter-spacing: 1px;
   line-height: 1;
 }
 .price-box b span {
@@ -3152,8 +3155,9 @@ button[type=submit]:hover {
 }
 .footer p {
   margin: 0;
-  font-family: sans-serif;
+  font-family: "poppins";
   font-weight: 100;
+  font-size: 14px;
   padding-right: 10%;
 }
 .footer h3 {
